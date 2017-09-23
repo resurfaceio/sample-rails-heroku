@@ -9,6 +9,7 @@ This application support the [Getting Started with Ruby on Heroku](https://devce
 Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
+$ brew services start postgresql
 $ git clone git@github.com:heroku/ruby-getting-started.git
 $ cd ruby-getting-started
 $ bundle install
