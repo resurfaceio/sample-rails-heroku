@@ -1,7 +1,7 @@
 PROJECT_NAME=rails_app
 
 start:
-	@docker stop resurface
+	@docker stop resurface || true
 	@docker build -t test-rails --no-cache .
 	@docker-compose run --no-deps rails_app rails new . --force --database=postgresql
 	@docker-compose up --detach
