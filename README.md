@@ -1,33 +1,26 @@
-# Rails GraphQL
-This is a companion repository for a DigitalOcean article on how to use GraphQL in Rails.
+# test-rails
+Example GraphQL API built on Rails
 
-## Installation
-- Clone the repo by running the command below in your Terminal window:
-```sh
-$ git clone git@github.com:9jaswag/rails_graphql.git
+Forked from [DigitalOcean's example](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-graphql-api) based on Rails.
+
+## Requirements
+
+* docker
+* docker-compose
+
+## Ports Used
+
+* 80 - GraphQL API
+* 4002 - Resurface API Explorer
+* 4001 - Resurface microservice
+* 4000 - Trino database UI
+
+## Deploy Locally
+
 ```
-- Change into the `rails_graphql` directory:
-```sh
-$ cd rails_graphql
-``` 
-- Install all dependencies:
-```sh
-$ bundle install
+make start     # rebuild and start containers
+make ping      # make simple ping request
+make bash      # open shell session
+make logs      # follow container logs
+make stop      # halt and remove containers
 ```
-- Start the development server:
-```sh
-$ rails server
-```
-You're set to consume any endpoint at `http://localhost:3000/graphql`.
-
-## How to contribute
-- Fork this repository.
-- Clone it.
-- Create your feature branch on your local machine with `git checkout -b your-feature-branch`
-- Push your changes to your remote branch with `git push origin your-feature-branch`
-- Open a pull request against the develop branch, and describe how your feature works
-
-Want to see new features? Open an [issue](https://github.com/9jaswag/rails_graphql/issues).
-
-## Author
-Chuks Opia. - Software Developer at Andela.
