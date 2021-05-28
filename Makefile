@@ -26,3 +26,6 @@ ping:
 restart:
 	@docker-compose stop
 	@docker-compose up --detach
+
+test:
+	@docker exec -it rails python3 test.py

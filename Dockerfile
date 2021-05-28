@@ -1,4 +1,4 @@
-FROM ruby:2.6.5
+FROM resurfaceio/python-ruby:2.3.0
 RUN mkdir -p /app
 WORKDIR /app
 COPY . /app/
